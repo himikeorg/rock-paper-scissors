@@ -13,4 +13,14 @@ function computerPlay() {
    }
 };
 
-console.log(computerPlay());
+function playRound(playerSelection,computerSelection) {
+   if (playerSelection != computerSelection) {
+       return "you lose!";
+   } else {
+       return "you win!";
+   }
+}
+
+const playerSelection = "Rock";
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection,computerSelection));
