@@ -14,13 +14,38 @@ function computerPlay() {
 };
 
 function playRound(playerSelection,computerSelection) {
-   if (playerSelection != computerSelection) {
-       return "you lose!";
-   } else {
-       return "you win!";
-   }
+    if (playerSelection == "Rock") {
+        if (computerSelection == "Scissors") {
+            return "You win!";
+        } else if (computerSelection == "Paper") {
+            return "You lose!";
+        } else {
+           return "Tie!";
+        }
+    } else if (playerSelection == "Paper") {
+        if (computerSelection == "Rock") {
+            return "You win!";
+        } else if (computerSelection == "Scissors") {
+            return "You lose!";
+        } else {
+            return "Tie!";
+        }
+    } else if (playerSelection == "Scissors") {
+        if (computerSelection == "Paper") {
+            return "You win!";
+        } else if (computerSelection == "Rock") {
+            return "You lose!";
+        } else {
+            return "Tie!";
+        }
+    } else {
+        return "Invalid selection";
+    }
+    
 }
 
-const playerSelection = "Rock";
+
+
+const playerSelection = "Paper";
 const computerSelection = computerPlay();
 console.log(playRound(playerSelection,computerSelection));
