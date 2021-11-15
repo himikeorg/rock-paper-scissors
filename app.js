@@ -19,26 +19,35 @@ function playRound() {
 
     if (playerSelection.toUpperCase() === "ROCK") {
         if (computerSelection == "Scissors") {
+            console.log("Computer chose: " + computerSelection);
             return "You win!";
         } else if (computerSelection == "Paper") {
+            console.log("Computer chose: " + computerSelection);
             return "You lose!";
         } else {
-           return "Tie!";
+            console.log("Computer chose: " + computerSelection);
+            return "Tie!";
         }
     } else if (playerSelection.toUpperCase() === "PAPER") {
         if (computerSelection == "Rock") {
+            console.log("Computer chose: " + computerSelection);
             return "You win!";
         } else if (computerSelection == "Scissors") {
+            console.log("Computer chose: " + computerSelection);
             return "You lose!";
         } else {
+            console.log("Computer chose: " + computerSelection);
             return "Tie!";
         }
     } else if (playerSelection.toUpperCase() === "SCISSORS") {
         if (computerSelection == "Paper") {
+            console.log("Computer chose: " + computerSelection);
             return "You win!";
         } else if (computerSelection == "Rock") {
+            console.log("Computer chose: " + computerSelection);
             return "You lose!";
         } else {
+            console.log("Computer chose: " + computerSelection);
             return "Tie!";
         }
     } else {
